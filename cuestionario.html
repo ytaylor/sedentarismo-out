@@ -53,7 +53,8 @@
             <div class="maincol-estadisticas">
 
                  <form method="post">
-                     <h1 class="article-estadisticas"><b>Datos Personales</b></h1>
+                     <fieldset>
+                         <legend class="article-estadisticas"><strong>Datos Personales</strong></legend>
 
                      <label for="fname">Nombre y Apellidos</label>
                         <input type="text" id="fname" name="firstname">
@@ -66,79 +67,87 @@
                             <option value="australia">Australia</option>
                             <option value="canada">Canada</option>
                             <option value="usa">USA</option>
+                            <option value="es">España</option>
+                            <option value="italia">Italia</option>
                         </select>
 
-                     <label for="lname">Tipo de Actividad Laboral</label>
-                     <input type="text" name="lastname" >
+                     <label for="act_laboral">Tipo de Actividad Laboral</label>
+                     <input type="text" name="act_laboral" id="act_laboral">
 
-                     <label for="lname">¿Cuándo tiempo suele pasar sentado o recostado en un
+                     <label for="tiempo_recostado">¿Cuándo tiempo suele pasar sentado o recostado en un
                          día típico? (Horas : minutos)</label>
                      <br>
-                     <input  type="time"name="lastname">
+                     <input  type="time" name="tiempo_recostado" id="tiempo_recostado">
+                     </fieldset>
 
 
-                     <h1 class="article-estadisticas"><b>Ejericio en la Actividad Laboral</b></h1>
-                     <label for="lname">En una semana típica, ¿cuántos días realiza usted
+                     <fieldset>
+                         <legend class="article-estadisticas"><strong>Ejericio en la Actividad Laboral</strong></legend>
+
+                     <label for="act_fisicas_trabajo">En una semana típica, ¿cuántos días realiza usted
                          actividades físicas intensas en su trabajo?</label>
-                     <input type="number" name="lastname" >
+                     <input type="number" name="act_fisicas_trabajo" id="act_fisicas_trabajo">
 
                      <br>  <br>
-                     <label for="lname">En uno de esos días en los que realiza actividades físicas
+                     <label for="act_fisicas_trabajo_tiempo">En uno de esos días en los que realiza actividades físicas
                          intensas, ¿cuánto tiempo suele dedicar a esas actividades? </label>    <br>
-                     <input  type="time"  name="lastname">
+                     <input  type="time"  name="act_fisicas_trabajo_tiempo" id="act_fisicas_trabajo_tiempo">
 
                      <br>  <br>
-                     <label for="lname">En una semana típica, ¿cuántos días realiza usted
+                     <label for="act_fisicas_trabajo_moderado">En una semana típica, ¿cuántos días realiza usted
                          actividades de intensidad moderada en su trabajo? </label>    <br>
-                     <input type="number" name="lastname" >
+                     <input type="number" name="act_fisicas_trabajo_moderado" id="act_fisicas_trabajo_moderado">
 
                      <br>  <br>
-                     <label for="lname">¿Camina usted o usa usted una bicicleta al menos 10 minutos
-                         consecutivos en sus desplazamientos? </label>    <br>
-                     <input  type="time"  name="lastname">
-
-
-                     <h1 class="article-estadisticas"><b>Ejericio en los desplazamientos diarios</b></h1>
-                     <br>  <br>
-                     <label for="lname">En uno de esos días en los que realiza actividades físicas de
+                     <label for="act_fisicas_tiempo">En uno de esos días en los que realiza actividades físicas de
                          intensidad moderada, ¿cuánto tiempo suele dedicar a esas
                          actividades? </label>    <br>
-                     <input type="radio" id="male" name="gender" value="male">
-                     <label for="male">Si</label><br>
-                     <input type="radio" id="female" name="gender" value="female">
-                     <label for="female">NO</label><br>
+                     <input  type="time"  name="act_fisicas_tiempo" id="act_fisicas_tiempo">
+                     </fieldset>
 
+                     <fieldset>
+                         <legend class="article-estadisticas"><strong>Ejericio en los desplazamientos diarios</strong></legend>
+                         <br>  <br>
+                     <label>¿Camina usted o usa usted una bicicleta al menos 10 minutos
+                         consecutivos en sus desplazamientos? </label>    <br>
+                     <input type="radio" id="siresp_bicicleta" name="resp_bicicleta" value="male">
+                     <label for="siresp_bicicleta">Si</label><br>
+                     <input type="radio" id="noresp_bicicleta" name="resp_bicicleta" value="female">
+                     <label for="noresp_bicicleta">NO</label><br>
 
                      <br>  <br>
-                     <label for="lname">En una semana típica, ¿cuántos días camina o va en bicicleta
+                     <label for="dias_camina">En una semana típica, ¿cuántos días camina o va en bicicleta
                          al menos 10 minutos consecutivos en sus desplazamientos? </label>    <br>
-                     <input type="number" name="lastname" >
+                     <input type="number" name="dias_camina" id="dias_camina" >
 
                      <br>  <br>
-                     <label for="lname">En un día típico, ¿cuánto tiempo pasa caminando o yendo en
+                     <label for="dias_bicicleta">En un día típico, ¿cuánto tiempo pasa caminando o yendo en
                          bicicleta para desplazarse? </label>    <br>
-                     <input  type="time"  name="lastname">
+                     <input  type="time"  name="dias_bicicleta" id="dias_bicicleta">
+                     </fieldset>
 
-                     <h1 class="article-estadisticas"><b>Ejericio en el tiempo libre</b></h1>
-                     <label for="lname">¿En su tiempo libre, practica usted deportes/fitness intensos
+                  <fieldset>
+                      <legend class="article-estadisticas"><strong>Ejericio en el tiempo libre</strong></legend>
+                      <label>¿En su tiempo libre, practica usted deportes/fitness intensos
                          que implican una aceleración importante de la respiración o
                          del ritmo cardíaco como [correr, jugar al fútbol] durante al
                          menos 10 minutos consecutivos? </label>    <br>
-                     <input type="radio" id="male" name="gender" value="male">
-                     <label for="male">Si</label><br>
-                     <input type="radio" id="female" name="gender" value="female">
-                     <label for="female">NO</label><br>
+                     <input type="radio" id="sideportes_fitnes" name="deportes_fitnes" value="male">
+                     <label for="sideportes_fitnes">Si</label><br>
+                     <input type="radio" id="nodeportes_fitnes" name="deportes_fitnes" value="female">
+                     <label for="nodeportes_fitnes">NO</label><br>
 
                      <br>  <br>
-                     <label for="lname">En una semana típica, ¿cuántos días practica usted
+                     <label for="practica_deportes">En una semana típica, ¿cuántos días practica usted
                          deportes/fitness intensos en su tiempo libre? </label>    <br>
-                     <input type="number" name="lastname" >
+                     <input type="number" name="practica_deportes" id="practica_deportes">
 
 
                      <br>  <br>
-                     <label for="lname">En uno de esos días en los que practica deportes/fitness
+                     <label for="practica_deportes_intenso">En uno de esos días en los que practica deportes/fitness
                          intensos, ¿cuánto tiempo suele dedicar a esas actividades? </label>    <br>
-                     <input  type="time"  name="lastname">
+                     <input  type="time"  name="practica_deportes_intenso" id="practica_deportes_intenso">
+                  </fieldset>
 
                      <input type="submit" onclick="enviar_formulario()" value="Enviar Respuestas">
                     </form>

@@ -142,7 +142,7 @@ padding-bottom:7px;
 
 .rightcol h2
 {
-	text-align:right;
+	text-align:center;
 	margin-right:7px;
 	font-size:21px;
 	color: #1D5174;
@@ -188,6 +188,9 @@ clear:both;
 {
 	width:220px;
 	margin-top: 270px;
+	margin-left: 660px;
+	position: fixed;
+	overflow-x: hidden; /* Disable horizontal scroll */
 
 
 }
@@ -222,7 +225,7 @@ margin-bottom:13px;
 }
 
 img{
-	margin-left: 10px;
+	margin-right: 20px;
 	width: 75%;
 
 }

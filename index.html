@@ -2,7 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>SEDENTARISMO OUT</title>
+    <meta name="description" content="Página HTML sobre el Sedentarismo en España"/>
+    <meta name="author" content="Alfonso" />
+
+    <title>SEDENTARISMO OUT</title>
 
 <link rel="stylesheet" type="text/css" href="style.css" />
    <!--  Para utilizar iconos de la familia de Material Icons sehace referencia a la libreria-->
@@ -35,13 +38,21 @@
 
         <div id="leftcol_container">
     	<div class="leftcol">
-        	<h2>Gimnasios</h2>
-            <img src="images/gym.JPG" alt="Gymnasios" usemap="#workmap">
-            <map name="workmap">
-                <area target="_blank" alt="Gym Fitnes" title="Gym Fitnes" href="https://luxintec.com/en/proyecto/attitude-fitness-gym/" coords="3,9,164,168" shape="rect">
-                <area target="_blank" alt="New Evolution" title="New Evolution" href="https://www.evolutionfitnesscenter.es/" coords="8,332,162,177" shape="rect">
-                <area target="_blank" alt="Holiday Gym" title="Holiday Gym" href="https://holidaygym.es/" coords="10,347,168,510" shape="rect">
-            </map>
+            <h2 class="titleMenu">Configuración</h2>
+            <form>
+                <label for="fname">Tamaño de la letra:</label><br/>
+                <select id="fname">
+                    <option value="volvo">14</option>
+                    <option value="saab">24</option>
+                    <option value="mercedes">28</option>
+                    <option value="audi">60</option>
+                </select><br>
+                <label for="lname">Color Fondo Articulos:</label><br>
+                <input type="text" id="lname" name="lname" value="Blue"><br><br>
+                <label for="lname">Color de los Titulos:</label><br>
+                <input type="text" id="tname" name="lname" value="Red"><br><br>
+                <input type="submit" value="Aceptar">
+            </form>
 
       </div>
       <div class="leftcol_bottom"></div>
@@ -141,21 +152,16 @@
         
         
         <div class="rightcol">
-        <h2 class="titleMenu">Configuración</h2>
-            <form>
-                <label for="fname">Tamaño de la letra:</label><br/>
-                <select id="fname">
-                    <option value="volvo">14</option>
-                    <option value="saab">24</option>
-                    <option value="mercedes">28</option>
-                    <option value="audi">60</option>
-                </select><br>
-                <label for="lname">Color Fondo Articulos:</label><br>
-                <input type="text" id="lname" name="lname" value="Blue"><br><br>
-                <label for="lname">Color de los Titulos:</label><br>
-                <input type="text" id="tname" name="lname" value="Red"><br><br>
-                <input type="submit" value="Aceptar">
-            </form>
+
+            <h2>Gimnasios</h2>
+            <img src="images/gym.JPG" alt="Gymnasios" usemap="#workmap">
+            <map name="workmap">
+                <area target="_blank" alt="Gym Fitnes" title="Gym Fitnes" href="https://luxintec.com/en/proyecto/attitude-fitness-gym/" coords="3,9,164,168" shape="rect">
+                <area target="_blank" alt="New Evolution" title="New Evolution" href="https://www.evolutionfitnesscenter.es/" coords="8,332,162,177" shape="rect">
+                <area target="_blank" alt="Holiday Gym" title="Holiday Gym" href="https://holidaygym.es/" coords="10,347,168,510" shape="rect">
+            </map>
+
+
         </div>
 
         <div class="rightcol_bottom"></div>
