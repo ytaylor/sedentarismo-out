@@ -12,7 +12,7 @@ body {
 	background-repeat:repeat-x;
 }
 /*Estilo css para el menu superiro en el header*/
-ul {
+.ul {
 	list-style-type: none;
 	margin-top: 10px;
 	padding: 0;
@@ -20,13 +20,13 @@ ul {
 	background-color: #dddd;
 	width: 100%;
 }
-li {
+.li {
 	float: left;
 }
 .titleMenu{
 	text-align: center;
 }
-li a {
+.li a {
 	display: block;
 	color: white;
 	text-align: center;
@@ -38,6 +38,18 @@ form{
 	text-align: center;
 	font-size: 14px;
 
+}
+div.ex3 {
+	width: 180px;
+	height: 110px;
+	overflow: auto;
+	margin-left: 6px;
+}
+
+iframe{
+	 width: 180px;
+	height: 100px;
+	margin-left: 5px;
 }
 
 li a:hover {
@@ -159,8 +171,8 @@ clear:both;
 
 #leftcol_container, #maincol_container, #rightcol_container
 {
-float:left;
-margin-left:7px;
+	float:left;
+	margin-left:7px;
 }
 
 
@@ -204,8 +216,14 @@ height:13px;
 margin-bottom:13px;
 }
 
+.card-text{
+	width: 100%;
+}
+
 img{
 	margin-left: 10px;
+	width: 75%;
+
 }
 
 .maincol_bottom
@@ -217,14 +235,60 @@ height:13px;
 margin-bottom:13px;
 }
 
+.button{
+	background-color: #111111;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-right: 10px;
 
+}
+.alert {
+	padding: 50px;
+	background-color: #2661CE;
+	color: white;
+	position: fixed;
+	bottom: 0;
+	font-size: 18px;
+	margin-left: 0;
+	width: 95%;
+}
+
+.closebtn {
+	margin-left: 15px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.closebtn:hover {
+	color: black;
+}
+
+.titleArticle{
+	margin-left: 16px;
+}
+
+.card{
+	width: 50%;
+	float: left;
+	padding-bottom: 20px;
+}
 .leftcol, .maincol, .rightcol
 {
-clear:both;	
-padding-left:5px;
-padding-right:5px;	
-padding-bottom:5px;	
-padding-top:12px;
+	clear:both;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:5px;
+	padding-top:12px;
 }
 .leftcol
 {
@@ -270,12 +334,39 @@ text-align:right;
 .maincol
 {
 display:block;
-background-image:url(images/maincol_top.png);
 background-repeat:no-repeat;
 background-color:#EEF5FB;
 width:437px;
 }
 
+
+
+.maincol-estadisticas
+{
+	display:block;
+	background-repeat:no-repeat;
+	width:600px;
+	margin-left: 10%;
+}
+.article-estadisticas{
+	text-align: center;
+	padding: 20px;
+}
+
+.article-body-estadisticas::first-letter {
+	font-size: 200%;
+	color: #8A2BE2;
+
+}
+.list-estadisticas{
+	font-size: 18px;
+	padding: 10px;
+}
+
+.article-body-estadisticas{
+	text-align: justify;
+	font-size: 18px;
+}
 .rightcol
 {
 display:block;
@@ -292,4 +383,69 @@ text-align:center;
 margin:0 auto 0 auto;
 	
 	
+}
+/*Formato para la tabla*/
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+.impar{
+	background-color: #8A2BE2;
+}
+.par{
+	background-color: #ff2ce7;
+}
+.title{
+	background-color: #7DBDEC;
+}
+
+/*Formato para el formulario*/
+input[type=text], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+input[type=number], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+input[type=time], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=submit] {
+	width: 100%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #45a049;
 }
