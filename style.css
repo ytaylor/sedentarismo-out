@@ -149,7 +149,6 @@ padding-bottom:7px;
 	margin-bottom:6px;
 }
 
-
 .maincol h2
 {
 color:#498DD8;
@@ -379,6 +378,10 @@ background-image:url(images/rightcol_top.png);
 background-repeat:no-repeat;
 width:210px;
 }
+
+#footer{
+	background-color: #2661CE;
+}
 #footer h3
 {
 font-size:12px;
@@ -424,7 +427,7 @@ input[type=text], input[type=number], input[type=time], select {
 
 input[type=submit] {
 	width: 100%;
-	background-color: #4CAF50;
+	background-color: #2661CE;
 	color: white;
 	padding: 14px 20px;
 	margin: 8px 0;
