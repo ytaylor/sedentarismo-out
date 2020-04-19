@@ -412,6 +412,9 @@ td, th {
 .title{
 	background-color: #7DBDEC;
 }
+.center{
+	text-align: center;
+}
 
 /*Formato para el formulario*/
 input[type=text], input[type=number], input[type=time], select {
