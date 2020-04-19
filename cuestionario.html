@@ -52,7 +52,7 @@
 
             <div class="maincol-estadisticas">
 
-                 <form>
+                 <form method="post">
                      <h1 class="article-estadisticas"><b>Datos Personales</b></h1>
 
                      <label for="fname">Nombre y Apellidos</label>
@@ -93,16 +93,54 @@
                      <input type="number" name="lastname" >
 
                      <br>  <br>
-                     <label for="lname">En uno de esos días en los que realiza actividades físicas de
-                         intensidad moderada, ¿cuánto tiempo suele dedicar a esas
-                         actividades? </label>    <br>
+                     <label for="lname">¿Camina usted o usa usted una bicicleta al menos 10 minutos
+                         consecutivos en sus desplazamientos? </label>    <br>
                      <input  type="time"  name="lastname">
 
 
-                     <input type="submit" value="Enviar Respuestas">
+                     <h1 class="article-estadisticas"><b>Ejericio en los desplazamientos diarios</b></h1>
+                     <br>  <br>
+                     <label for="lname">En uno de esos días en los que realiza actividades físicas de
+                         intensidad moderada, ¿cuánto tiempo suele dedicar a esas
+                         actividades? </label>    <br>
+                     <input type="radio" id="male" name="gender" value="male">
+                     <label for="male">Si</label><br>
+                     <input type="radio" id="female" name="gender" value="female">
+                     <label for="female">NO</label><br>
 
 
+                     <br>  <br>
+                     <label for="lname">En una semana típica, ¿cuántos días camina o va en bicicleta
+                         al menos 10 minutos consecutivos en sus desplazamientos? </label>    <br>
+                     <input type="number" name="lastname" >
 
+                     <br>  <br>
+                     <label for="lname">En un día típico, ¿cuánto tiempo pasa caminando o yendo en
+                         bicicleta para desplazarse? </label>    <br>
+                     <input  type="time"  name="lastname">
+
+                     <h1 class="article-estadisticas"><b>Ejericio en el tiempo libre</b></h1>
+                     <label for="lname">¿En su tiempo libre, practica usted deportes/fitness intensos
+                         que implican una aceleración importante de la respiración o
+                         del ritmo cardíaco como [correr, jugar al fútbol] durante al
+                         menos 10 minutos consecutivos? </label>    <br>
+                     <input type="radio" id="male" name="gender" value="male">
+                     <label for="male">Si</label><br>
+                     <input type="radio" id="female" name="gender" value="female">
+                     <label for="female">NO</label><br>
+
+                     <br>  <br>
+                     <label for="lname">En una semana típica, ¿cuántos días practica usted
+                         deportes/fitness intensos en su tiempo libre? </label>    <br>
+                     <input type="number" name="lastname" >
+
+
+                     <br>  <br>
+                     <label for="lname">En uno de esos días en los que practica deportes/fitness
+                         intensos, ¿cuánto tiempo suele dedicar a esas actividades? </label>    <br>
+                     <input  type="time"  name="lastname">
+
+                     <input type="submit" onclick="enviar_formulario()" value="Enviar Respuestas">
                     </form>
 
             </div>
