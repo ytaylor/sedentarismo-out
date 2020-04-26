@@ -179,7 +179,7 @@ clear:both;
 	position: fixed;
 	margin-top: 270px;
 	margin-right: 10px;
-	margin-left: 650px;
+	margin-left: 680px;
 
 }
 
@@ -369,7 +369,7 @@ width:437px;
 }
 .article-estadisticas{
 	text-align: center;
-	padding: 20px;
+	padding: 40px;
 }
 
 .article-body-estadisticas::first-letter {
